@@ -29,7 +29,7 @@ function App() {
   };
   const toggleTask = (id) => {
     const updatedList = list.map((item) =>
-      item.id == id ? { ...item, completed: !item.completed } : item,
+      item.id === id ? { ...item, completed: !item.completed } : item,
     );
     setList(updatedList);
   };
