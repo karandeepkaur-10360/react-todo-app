@@ -28,7 +28,7 @@ function List({ addItem, list, deleteTask, toggleTask }) {
           <div className="task" key={item.id}>
             <input
               type="checkbox"
-              completed={item.completed}
+              checked={item.completed}
               onChange={() => toggleTask(item.id)}
             />
             <span
